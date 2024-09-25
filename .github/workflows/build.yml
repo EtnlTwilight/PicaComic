@@ -1,4 +1,4 @@
-name: Flutter CI
+name: Build Apk
 
 # 创建触发打包条件：只要推送tag，就会触发版本打包
 
@@ -16,7 +16,7 @@ jobs:
       with:
     # 使用office分支的代码
         path: office
-    - uses: actions/setup-java@v4.4.0
+    - uses: actions/setup-java@v1
       with:
         java-version: '17.0'
     
